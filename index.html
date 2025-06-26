@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+    <title>Optimized Process Systems (OPS) | Pioneering Business Automation & AI-Driven ERP for Egypt</title>
+    <meta name="description" content="Revolutionize your operations with OPS. Our integrated platform delivers ERP, RPA, and AI Analytics, empowering Egyptian businesses to achieve unparalleled efficiency, minimize costs, and drive intelligent growth." />
+    <meta name="keywords" content="ERP Egypt, RPA Egypt, AI Analytics Egypt, Digital Transformation Egypt, Business Process Automation, Workflow Automation, Enterprise Resource Planning, Intelligent Automation, Custom RPA, SME Automation Egypt, Data-Driven Insights" />
+    <meta name="author" content="Optimized Process Systems" />
+
+    <link rel="canonical" href="https://www.yourdomain.com/index.html" />
+
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        /* CSS Variables for easier theming */
+        :root {
+            --deep-blue: #003366;
+            --bright-blue: #00AAFF;
+            --light-gray: #f8f9fa;
+            --section-bg-light: #f8f9fa;
+            --section-bg-white: #ffffff;
+            --text-dark: #343a40;
+            --text-muted: #6c757d;
+            --heading-color: var(--deep-blue);
+            --body-text-color: var(--text-dark);
+            --link-color: var(--bright-blue);
+            --link-hover-color: #0088CC;
+            --card-shadow: rgba(0,0,0,0.05);
+            --footer-bg: var(--deep-blue);
+            --footer-text: #fff;
+            --navbar-bg: rgba(0, 51, 102, 0.95);
+        }
+
+        body {
+            font-family: "Open Sans", sans-serif;
+            scroll-behavior: smooth;
+            background-color: var(--section-bg-light);
+            color: var(--body-text-color);
+        }
+
+        h1, h2, h3, h4, h5, h6, .section-title {
+            font-family: "Montserrat", sans-serif;
+            color: var(--heading-color);
+        }
+
+        .navbar {
+            background-color: var(--navbar-bg);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .navbar-brand, .nav-link {
+            color: #fff !important; /* Keep white for readability on dark nav */
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        .navbar-brand:hover, .nav-link:hover {
+            color: var(--bright-blue) !important;
+        }
+        .navbar-toggler {
+            border-color: rgba(255,255,255,0.2);
+        }
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        .hero {
+            position: relative;
+            color: #fff;
+            text-align: center;
+            padding: 180px 0 120px 0;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/img/hero-bg.png') center/cover no-repeat; /* Assuming you have a hero-bg.png image, otherwise adjust */
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        .hero h1 {
+            color: #fff;
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+        }
+        .hero .lead {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto 40px auto;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .hero .lead {
+                font-size: 1rem;
+            }
+        }
+
+        section {
+            padding: 90px 0;
+            overflow: hidden;
+            background-color: var(--section-bg-white);
+        }
+        section:nth-of-type(even) {
+            background-color: var(--section-bg-light);
+        }
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            width: 70px;
+            height: 4px;
+            background-color: var(--bright-blue);
+            border-radius: 5px;
+        }
+        p.text-muted {
+            font-size: 1.1rem;
+            color: var(--text-muted) !important;
+        }
+
+        .feature-icon {
+            width: 70px;
+            height: auto;
+            margin-bottom: 20px;
+            filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.1));
+        }
+        .feature-item h5 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .feature-item p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        .card {
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px var(--card-shadow);
+            border: none;
+            background-color: var(--section-bg-white);
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        .card-body i {
+            color: var(--bright-blue);
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+        }
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        .card-text {
+            color: var(--body-text-color);
+        }
+
+        /* Live Chat Button (placeholder for now) */
+        #liveChatBtn {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            background: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 55px;
+            height: 55px;
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(40, 167, 69, 0.4);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            text-decoration: none;
+        }
+        #liveChatBtn:hover {
+            background: #218838;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(40, 167, 69, 0.5);
+        }
+
+        .accordion-button {
+            font-weight: 700;
+            color: var(--heading-color);
+            background-color: var(--section-bg-white);
+            transition: all 0.3s ease;
+        }
+        .accordion-button:not(.collapsed) {
+            color: var(--bright-blue);
+            background-color: var(--section-bg-light);
+            box-shadow: none;
+        }
+        .accordion-body {
+            color: var(--body-text-color);
+            background-color: var(--section-bg-white);
+        }
+        /* Enhancement for accordion items */
+        .accordion-item {
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 0.5rem;
+            margin-bottom: 1rem; /* Add some spacing between items */
+            overflow: hidden; /* Ensures border-radius applies correctly */
+            box-shadow: 0 2px 8px var(--card-shadow); /* Subtle shadow */
+        }
+        .accordion-item:last-of-type {
+            margin-bottom: 0; /* No margin for the last item */
+        }
+        .accordion-button:focus {
+            box-shadow: 0 0 0 0.25rem rgba(0, 170, 255, 0.25);
+            border-color: var(--bright-blue);
+        }
+
+
+        .form-control {
+            border-radius: 0.5rem;
+            padding: 0.8rem 1rem;
+            background-color: var(--section-bg-white);
+            color: var(--body-text-color);
+            border: 1px solid rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        .form-control::placeholder {
+            color: var(--text-muted);
+            opacity: 0.8;
+        }
+        .form-control:focus {
+            border-color: var(--bright-blue);
+            box-shadow: 0 0 0 0.25rem rgba(0, 170, 255, 0.25);
+            background-color: var(--section-bg-white);
+        }
+
+        .btn-primary {
+            background-color: var(--bright-blue);
+            border-color: var(--bright-blue);
+            font-weight: 600;
+            padding: 12px 30px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: var(--link-hover-color);
+            border-color: var(--link-hover-color);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 170, 255, 0.3);
+        }
+        .btn-outline-light {
+            border-color: #fff;
+            color: #fff;
+            font-weight: 600;
+            padding: 12px 30px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        .btn-outline-light:hover {
+            background-color: #fff;
+            color: var(--deep-blue);
+        }
+        .btn-warning {
+            background-color: var(--bright-blue);
+            border-color: var(--bright-blue);
+            color: #fff;
+            font-weight: 600;
+            padding: 12px 30px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        .btn-warning:hover {
+            background-color: var(--link-hover-color);
+            border-color: var(--link-hover-color);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 170, 255, 0.3);
+        }
+
+        /* Footer styling */
+        footer {
+            background: var(--footer-bg);
+            color: var(--footer-text);
+        }
+        footer a {
+            color: var(--footer-text);
+            transition: color 0.3s ease;
+        }
+        footer a:hover {
+            color: var(--bright-blue);
+        }
+        .social-links a {
+            font-size: 1.8rem;
+            margin: 0 10px;
+            color: var(--footer-text);
+            transition: color 0.3s ease;
+        }
+        .social-links a:hover {
+            color: var(--bright-blue);
+        }
+
+        /* Back to Top Button */
+        #backToTop {
+            position: fixed; bottom: 30px; right: 30px;
+            display: none;
+            background: var(--bright-blue);
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 55px;
+            height: 55px;
+            font-size: 1.8rem;
+            line-height: 1;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 170, 255, 0.4);
+            transition: all 0.3s ease;
+        }
+        #backToTop:hover {
+            background: var(--link-hover-color);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 170, 255, 0.5);
+        }
+
+        .industry-icon {
+            width: 90px;
+            height: 90px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "name": "Optimized Process Systems (OPS)",
+          "url": "https://www.yourdomain.com",
+          "logo": "https://www.yourdomain.com/assets/img/robo-icon.png",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+201234567890",
+            "contactType": "Customer Service",
+            "areaServed": "EG",
+            "availableLanguage": ["en", "ar"]
+          },
+          "sameAs": [
+            "https://www.linkedin.com/",
+            "https://www.facebook.com/profile.php?id=61577391969167",
+            "https://www.instagram.com/ops_egypt/"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "url": "https://www.yourdomain.com",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.yourdomain.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Business Process Automation Software",
+          "name": "Optimized Process Systems (OPS)",
+          "description": "An all-in-one platform integrating ERP, RPA, and AI-powered Analytics to streamline operations, automate tasks, and provide data-driven insights for Egyptian businesses.",
+          "provider": {
+            "@type": "Organization",
+            "name": "Optimized Process Systems"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "EG"
+          },
+          "offers": {
+            "@type": "Offer",
+            "name": "Customized Automation Solutions",
+            "description": "Tailored ERP, RPA, and AI Analytics solutions with flexible pricing.",
+            "priceCurrency": "EGP",
+            "priceSpecification": {
+                "@type": "UnitPriceSpecification",
+                "priceType": "StartingPrice",
+                "price": "Custom",
+                "unitText": "Per Project"
+            },
+            "url": "https://www.yourdomain.com/#contact"
+          }
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "What is OPS and how does it benefit my business?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "OPS (Optimized Process Systems) is a comprehensive platform integrating <strong>ERP</strong>, <strong>RPA</strong>, and <strong>AI-powered Analytics</strong>. It helps businesses overcome fragmented systems, eliminate manual tasks, and leverage real-time data, leading to enhanced efficiency, reduced operational costs, and smarter strategic decisions."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What is the typical timeline for seeing results with OPS?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "While implementation timelines vary based on your business complexity, many clients experience initial efficiency gains and cost reductions within weeks. Significant return on investment (ROI) is typically observed within 3-6 months as our tailored automation solutions mature."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Is OPS adaptable to specific industries and unique business processes?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Absolutely. OPS is built on a highly flexible architecture. We collaborate closely with you to understand your industry's specific nuances, workflows, and objectives, then custom-tailor ERP modules, develop specialized RPA bots, and configure analytics dashboards to meet your exact operational requirements."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What post-implementation support does OPS provide?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "We offer comprehensive support packages, ranging from standard assistance to 24/7 premium support for enterprises. Our services include technical troubleshooting, system maintenance, feature updates, and ongoing consultation, ensuring you continuously derive maximum value from your OPS investment."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How does OPS ensure the security and privacy of my data?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Data security is a cornerstone of OPS. We implement industry-leading encryption protocols, conduct regular security audits, and enforce robust access controls to protect your sensitive information. Our infrastructure is designed for resilience and data integrity, ensuring your data remains secure and accessible only to authorized personnel."
+                    }
+                }
+            ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#navbarResponsive" data-bs-offset="70">
+    <a class="visually-hidden-focusable" href="#mainContent">Skip to main content</a>
+
+    <nav id="mainNav" class="navbar navbar-expand-lg fixed-top" data-aos="fade-down" aria-label="Main Navigation">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#page-top">
+                <img src="assets/img/robo-icon.png" alt="OPS Robot Logo" class="brand-icon me-2" style="height: 35px;" loading="lazy" />
+                <span class="fs-4">OPS</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#advantages">Advantages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#industries">Industries</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main id="mainContent">
+        <header class="hero d-flex align-items-center" data-aos="fade-in">
+            <div class="container hero-content">
+                <h1 class="mb-4" data-aos="zoom-in" data-aos-delay="100">Unleash Peak Performance: Smart Automation & Unified ERP</h1>
+                <p class="lead mb-5" data-aos="fade-up" data-aos-delay="300">
+                    OPS seamlessly integrates ERP, Robotic Process Automation (RPA), and AI-driven analytics, delivering a comprehensive platform to streamline workflows, drastically reduce operational costs, and ignite intelligent business growth.
+                </p>
+                <div data-aos="fade-up" data-aos-delay="500">
+                    <a href="#contact" class="btn btn-warning btn-lg me-3" aria-label="Request a Free Consultation">Request a Free Consultation</a>
+                    <a href="#features" class="btn btn-outline-light btn-lg" aria-label="Explore OPS Solutions">Explore OPS Solutions</a>
+                </div>
+            </div>
+        </header>
+
+        <section id="about" class="py-5" data-aos="fade-up">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6" data-aos="fade-right">
+                        <img src="assets/img/robo-desk.png" alt="OPS Robot working on a desk, representing automation and efficiency" class="img-fluid rounded shadow-lg" loading="lazy" />
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-left">
+                        <h2 class="section-title text-center text-lg-start">Optimized Process Systems (OPS): Elevating Egyptian Business</h2>
+                        <p class="fs-5 text-muted">OPS provides end-to-end business automation, meticulously transforming disparate data and manual, repetitive tasks into seamless processes and actionable real-time insights.</p>
+                        <h5 class="mt-4 mb-3">What Sets Us Apart:</h5>
+                        <ul>
+                            <li><i class="bi bi-check-circle-fill text-primary me-2" aria-hidden="true"></i> <strong>Tailored ERPNext Core:</strong> A robust ERPNext foundation customized for comprehensive finance, CRM, inventory, and HR management, ensuring a singular, accurate data source.</li>
+                            <li><i class="bi bi-check-circle-fill text-primary me-2" aria-hidden="true"></i> <strong>Intelligent Robotic Process Automation (RPA):</strong> Deploy smart bots to automate high-volume, repetitive tasks—from data entry to report generation—significantly reducing errors and reallocating human capital to strategic initiatives.</li>
+                            <li><i class="bi bi-check-circle-fill text-primary me-2" aria-hidden="true"></i> <strong>AI-Powered Strategic Analytics:</strong> Convert complex data into profound intelligence through dynamic dashboards and advanced predictive modeling, facilitating faster, more informed business decisions.</li>
+                        </ul>
+                        <p class="text-muted mt-4">Partner with OPS to catalyze operational excellence and achieve sustainable market leadership within Egypt's dynamic business landscape.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="py-5" data-aos="fade-up">
+            <div class="container">
+                <div class="text-center mb-5" data-aos="fade-down">
+                    <h2 class="section-title">OPS: Unlocking Core Business Capabilities</h2>
+                    <p class="text-muted">Our platform features modular, scalable components, meticulously engineered to align with your precise business requirements.</p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-3 text-center feature-item" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="assets/img/feature-erp.png" alt="Icon representing ERP system integration for business management" class="mb-3 feature-icon" loading="lazy" />
+                        <h5>Integrated ERP</h5>
+                        <p>Unify and command all core business functions—from finance to CRM—with a highly customized, centralized system.</p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 text-center feature-item" data-aos="zoom-in" data-aos-delay="200">
+                        <img src="assets/img/feature-rpa.png" alt="Icon representing Robotic Process Automation for task automation" class="mb-3 feature-icon" loading="lazy" />
+                        <h5>Intelligent RPA</h5>
+                        <p>Leverage advanced bots to automate high-volume, repetitive tasks, dramatically boosting efficiency and eliminating manual errors.</p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 text-center feature-item" data-aos="zoom-in" data-aos-delay="300">
+                        <img src="assets/img/robo-chart.png" alt="OPS Robot with charts, representing data analytics and insights" class="mb-3 feature-icon" loading="lazy" />
+                        <h5>AI-Powered Insights</h5>
+                        <p>Convert raw data into profound intelligence through dynamic real-time dashboards and sophisticated predictive analytics, driving superior decision-making.</p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 text-center feature-item" data-aos="zoom-in" data-aos-delay="400">
+                        <img src="assets/img/feature-integration.png" alt="Icon representing seamless system integration with third-party apps" class="mb-3 feature-icon" loading="lazy" />
+                        <h5>Seamless Integrations</h5>
+                        <p>Achieve frictionless connectivity with your current CRM, communication platforms, and essential third-party applications.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="advantages" class="py-5" data-aos="fade-up">
+            <div class="container">
+                <div class="text-center mb-5" data-aos="fade-down">
+                    <h2 class="section-title">The OPS Advantage: Why Choose Us?</h2>
+                    <p class="text-muted">Discover the decisive advantages that position OPS as your premier partner for transformative digital evolution.</p>
+                </div>
+                <div class="row g-4 text-center">
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="p-4 rounded shadow-sm h-100 card">
+                            <i class="bi bi-stack fs-1 mb-3 text-primary" aria-hidden="true"></i>
+                            <h5>Unified Platform</h5>
+                            <p>Our singular, comprehensive solution seamlessly integrates ERP, RPA, and AI Analytics, delivering unparalleled business control and operational synergy.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="p-4 rounded shadow-sm h-100 card">
+                            <i class="bi bi-person-check-fill fs-1 mb-3 text-primary" aria-hidden="true"></i>
+                            <h5>Local Expertise, Global Standards</h5>
+                            <p>Our dedicated local team ensures bespoke implementation and unwavering support, perfectly attuned to the nuances of the Egyptian market.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="p-4 rounded shadow-sm h-100 card">
+                            <i class="bi bi-graph-up-arrow fs-1 mb-3 text-primary" aria-hidden="true"></i>
+                            <h5>Accelerated ROI</h5>
+                            <p>Realize demonstrably measurable cost reductions, substantial efficiency gains, and strategic insights that accelerate sustainable business growth.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-5" data-aos="fade-up">
+            <div class="container">
+                <div class="text-center mb-5" data-aos="fade-down">
+                    <h2 class="section-title">Comprehensive Service Offerings</h2>
+                    <p class="text-muted">We provide a full spectrum of comprehensive services, guaranteeing seamless and maximally successful OPS deployment.</p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-4" data-aos="flip-left" data-aos-delay="100">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body text-center p-4">
+                                <i class="bi bi-cpu-fill fs-1 mb-3 text-primary" aria-hidden="true"></i>
+                                <h5 class="card-title">Strategic Solution Design</h5>
+                                <p class="card-text">We engineer bespoke OPS solutions, meticulously aligned with your distinct business processes and overarching strategic objectives.</p>
+                                <a href="#contact" class="btn btn-sm btn-outline-primary mt-3" aria-label="Learn more about Custom Solution Design">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4" data-aos="flip-left" data-aos-delay="200">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body text-center p-4">
+                                <i class="bi bi-pc-display-horizontal fs-1 mb-3 text-primary" aria-hidden="true"></i>
+                                <h5 class="card-title">Flawless Implementation</h5>
+                                <p class="card-text">From initial system architecture to meticulous data migration, we guarantee a smooth, disruption-free transition to your advanced OPS ecosystem.</p>
+                                <a href="#contact" class="btn btn-sm btn-outline-primary mt-3" aria-label="Get started with Implementation & Migration">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4" data-aos="flip-left" data-aos-delay="300">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body text-center p-4">
+                                <i class="bi bi-headset fs-1 mb-3 text-primary" aria-hidden="true"></i>
+                                <h5 class="card-title">Empowering Training & Dedicated Support</h5>
+                                <p class="card-text">Equip your workforce with expert, comprehensive training, then leverage our ongoing, robust support to ensure sustained optimal performance and continuous growth.</p>
+                                <a href="#contact" class="btn btn-sm btn-outline-primary mt-3" aria-label="View support options">View Support</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="industries" class="py-5" data-aos="fade-up">
+            <div class="container">
+                <div class="text-center mb-5" data-aos="fade-down">
+                    <h2 class="section-title">Industries We Transform</h2>
+                    <p class="text-muted">OPS's inherent adaptability makes it the ideal solution for diverse sectors, consistently delivering highly customized, impact-driven automation.</p>
+                </div>
+                <div class="row g-4 text-center justify-content-center">
+                    <div class="col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                        <img src="assets/img/industry-travel.png" alt="Travel and Hospitality Industry Icon, representing booking automation" class="industry-icon mb-3 rounded-circle border p-2" style="background-color: #e0f7fa;" loading="lazy" />
+                        <h6>Travel & Hospitality</h6>
+                        <p class="small text-muted">Automate reservations, optimize inventory, and elevate guest experiences.</p>
+                    </div>
+                    <div class="col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                        <img src="assets/img/industry-retail.png" alt="Retail and E-commerce Industry Icon, representing supply chain optimization" class="industry-icon mb-3 rounded-circle border p-2" style="background-color: #fff3e0;" loading="lazy" />
+                        <h6>Retail & E-commerce</h6>
+                        <p class="small text-muted">Streamline supply chains, accelerate order fulfillment, and gain critical sales intelligence.</p>
+                    </div>
+                    <div class="col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                        <img src="assets/img/industry-manufacturing.png" alt="Manufacturing and Logistics Industry Icon, representing production efficiency" class="industry-icon mb-3 rounded-circle border p-2" style="background-color: #e8f5e9;" loading="lazy" />
+                        <h6>Manufacturing & Logistics</h6>
+                        <p class="small text-muted">Boost production efficiency, achieve precise inventory control, and simplify intricate logistics.</p>
+                    </div>
+                     <div class="col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                        <img src="assets/img/industry-accounting.png" alt="Accounting Companies Industry Icon, representing automated financial processes" class="industry-icon mb-3 rounded-circle border p-2" style="background-color: #f3e5f5;" loading="lazy" />
+                        <h6>Accounting & Finance</h6>
+                        <p class="small text-muted">Automate financial reporting, reconciliation, and audit prep for greater accuracy and compliance.</p>
+                    </div>
+                     <div class="col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+                        <img src="assets/img/industry-healthcare.png" alt="Healthcare Industry Icon, representing streamlined patient management" class="industry-icon mb-3 rounded-circle border p-2" style="background-color: #ffe0b2;" loading="lazy" />
+                        <h6>Healthcare</h6>
+                        <p class="small text-muted">Streamline patient administration, optimize billing cycles, and secure sensitive data.</p>
+                    </div>
+                    <div class="col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="600">
+                        <img src="assets/img/industry-education.png" alt="Education Industry Icon, representing automated admissions" class="industry-icon mb-3 rounded-circle border p-2" style="background-color: #c8e6c9;" loading="lazy" />
+                        <h6>Education</h6>
+                        <p class="small text-muted">Automate admissions, efficiently manage student records, and optimize campus-wide operations.</p>
+                    </div>
+                    
+                    <div class="col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="800">
+                        <img src="assets/img/industry-professional.png" alt="Professional Services Industry Icon, representing project management" class="industry-icon mb-3 rounded-circle border p-2" style="background-color: #e1bee7;" loading="lazy" />
+                        <h6>Professional Services</h6>
+                        <p class="small text-muted">Master project management, optimize client invoicing, and automate comprehensive reporting.</p>
+                    </div>
+                    <div class="col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="900">
+                        <img src="assets/img/industry-realestate.png" alt="Real Estate Industry Icon, representing automated property listings" class="industry-icon mb-3 rounded-circle border p-2" style="background-color: #fffde7;" loading="lazy" />
+                        <h6>Real Estate</h6>
+                        <p class="small text-muted">Automate property listings, cultivate robust client relationships, and accelerate sales cycles.</p>
+                    </div>
+                </div>
+                </div>
+        </section>
+
+        <section id="faq" class="py-5" data-aos="fade-up">
+            <div class="container">
+                <div class="text-center mb-5" data-aos="fade-down">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="text-muted">Find quick answers to common questions about OPS and our services.</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <div class="accordion accordion-flush" id="faqAccordion">
+                            <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+                                <h3 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        What is OPS and how does it benefit my business?
+                                    </button>
+                                </h3>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        OPS (Optimized Process Systems) is a comprehensive platform integrating <strong>ERP</strong>, <strong>RPA</strong>, and <strong>AI-powered Analytics</strong>. It helps businesses overcome fragmented systems, eliminate manual tasks, and leverage real-time data, leading to enhanced efficiency, reduced operational costs, and smarter strategic decisions.
+                                    </div>
+                                }
+                                </div>
+                            </div>
+                            <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                                <h3 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        What is the typical timeline for seeing results with OPS?
+                                    </button>
+                                </h3>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        While implementation timelines vary based on your business complexity, many clients experience initial efficiency gains and cost reductions within weeks. Significant return on investment (ROI) is typically observed within 3-6 months as our tailored automation solutions mature.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+                                <h3 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Is OPS adaptable to specific industries and unique business processes?
+                                    </button>
+                                </h3>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Absolutely. OPS is built on a highly flexible architecture. We collaborate closely with you to understand your industry's specific nuances, workflows, and objectives, then custom-tailor ERP modules, develop specialized RPA bots, and configure analytics dashboards to meet your exact operational requirements.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+                                <h3 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        What post-implementation support does OPS provide?
+                                    </button>
+                                </h3>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        We offer comprehensive support packages, ranging from standard assistance to 24/7 premium support for enterprises. Our services include technical troubleshooting, system maintenance, feature updates, and ongoing consultation, ensuring you continuously derive maximum value from your OPS investment.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item" data-aos="fade-up" data-aos-delay="500">
+                                <h3 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        How does OPS ensure the security and privacy of my data?
+                                    </button>
+                                </h3>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Data security is a cornerstone of OPS. We implement industry-leading encryption protocols, conduct regular security audits, and enforce robust access controls to protect your sensitive information. Our infrastructure is designed for resilience and data integrity, ensuring your data remains secure and accessible only to authorized personnel.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="bg-primary text-white py-5" style="background-color: var(--deep-blue) !important;" data-aos="fade-up">
+            <div class="container">
+                <div class="text-center mb-5" data-aos="fade-down">
+                    <h2 class="section-title text-white">Connect With Our Experts</h2>
+                    <p class="lead">Let's initiate a discussion on how OPS can revolutionize and optimize your business operations.</p>
+                </div>
+
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-10">
+                        <div class="card p-4 shadow-lg bg-white text-dark" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card-body">
+                                <h3 class="card-title text-center text-primary mb-4">Get Started with OPS Today!</h3>
+                                <div class="row g-4 mb-4">
+                                    <div class="col-md-6">
+                                        <h5 class="text-deep-blue"><i class="bi bi-patch-check-fill me-2 text-warning"></i>Why Connect with OPS?</h5>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2"><i class="bi bi-arrow-right-short text-warning"></i> <strong>Free Consultation:</strong> Discuss your unique challenges and opportunities.</li>
+                                            <li class="mb-2"><i class="bi bi-arrow-right-short text-warning"></i> <strong>Personalized Demo:</strong> See OPS in action, tailored to your industry.</li>
+                                            <li class="mb-2"><i class="bi bi-arrow-right-short text-warning"></i> <strong>Custom Solution Blueprint:</strong> Get a roadmap for your digital transformation.</li>
+                                            <li class="mb-2"><i class="bi bi-arrow-right-short text-warning"></i> <strong>Expert Local Support:</strong> Benefit from our dedicated Cairo-based team.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h5 class="text-deep-blue"><i class="bi bi-chat-dots-fill me-2 text-warning"></i>Send Us a Message</h5>
+                                        <p class="text-muted">Fill out the form below, and our team will get back to you within 24 business hours.</p>
+                                        <form action="https://formspree.io/f/mrgopozq" method="POST"> <div class="mb-3">
+                                                <label for="contactName" class="form-label visually-hidden">Your Name</label>
+                                                <input class="form-control" name="name" id="contactName" type="text" placeholder="Your Name" required />
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="contactEmail" class="form-label visually-hidden">Your Business Email</label>
+                                                <input class="form-control" name="email" id="contactEmail" type="email" placeholder="Your Business Email" required />
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="contactSubject" class="form-label visually-hidden">Subject</label>
+                                                <input class="form-control" name="subject" id="contactSubject" type="text" placeholder="Subject (e.g., RPA Inquiry, ERP Consultation)" />
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="contactMessage" class="form-label visually-hidden">Your Message</label>
+                                                <textarea class="form-control" name="message" id="contactMessage" rows="4" placeholder="Tell us about your automation goals or challenges..." required></textarea>
+                                            </div>
+                                            <div class="d-grid mt-4">
+                                                <button type="submit" class="btn btn-warning btn-lg">Send Message</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row text-center mt-5 text-white">
+                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="p-4 rounded h-100" style="background-color: rgba(0, 0, 0, 0.1);">
+                            <i class="bi bi-geo-alt-fill fs-3 mb-2" aria-hidden="true"></i>
+                            <h5 class="text-white">Our Location</h5>
+                            <p class="mb-0">Cairo, Egypt</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="p-4 rounded h-100" style="background-color: rgba(0, 0, 0, 0.1);">
+                            <i class="bi bi-envelope-fill fs-3 mb-2" aria-hidden="true"></i>
+                            <h5 class="text-white">Email Us</h5>
+                            <p class="mb-0"><a href="mailto:info@ops-solutions.com" class="text-white text-decoration-none">info@ops-solutions.com</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+                        <div class="p-4 rounded h-100" style="background-color: rgba(0, 0, 0, 0.1);">
+                            <i class="bi bi-telephone-fill fs-3 mb-2" aria-hidden="true"></i>
+                            <h5 class="text-white">Call Us</h5>
+                            <p class="mb-0"><a href="tel:+201234567890" class="text-white text-decoration-none">+20 123 456 7890</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center py-5" data-aos="fade-up">
+        <div class="container">
+            
+            <p>&copy; 2025 Optimized Process Systems. All Rights Reserved.</p>
+            <p class="small">
+                <a href="#" class="text-decoration-none mx-2">Privacy Policy</a> |
+                <a href="#" class="text-decoration-none mx-2">Terms of Service</a>
+            </p>
+            <div class="social-links mt-3">
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="text-decoration-none mx-2" aria-label="Follow us on LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61577391969167" target="_blank" rel="noopener noreferrer" class="text-decoration-none mx-2" aria-label="Follow us on Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/ops_egypt/" target="_blank" rel="noopener noreferrer" class="text-decoration-none mx-2" aria-label="Follow us on Instagram"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    
+    <a href="javascript:void(0);" id="liveChatBtn" role="button" aria-label="Open Live Chat Support">
+        <i class="bi bi-chat-dots-fill" aria-hidden="true"></i>
+    </a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 900,
+            once: true,
+            offset: 80,
+            easing: 'ease-in-out'
+        });
+
+        // Back to Top functionality
+        const backToTopBtn = document.getElementById('backToTop');
+        if(backToTopBtn) { // Check if button exists before adding event listeners
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTopBtn.style.display = 'flex';
+                } else {
+                    backToTopBtn.style.display = 'none';
+                }
+            });
+            backToTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+        }
+
+        // Smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId && targetId !== '#') {
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        const navbarHeight = document.querySelector('.navbar').offsetHeight;
+                        const offsetPosition = targetElement.offsetTop - navbarHeight - 15;
+
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: "smooth"
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
