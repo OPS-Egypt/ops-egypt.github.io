@@ -16,11 +16,13 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
     <link rel="manifest" href="assets/img/site.webmanifest">
 
-    <!-- Optimized Google Fonts Loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://unpkg.com">
 
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet"></noscript>
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -181,7 +183,6 @@
         .card-text {
             color: var(--body-text-color);
         }
-
 
         .accordion-button {
             font-weight: 700;
@@ -441,7 +442,7 @@
     <nav id="mainNav" class="navbar navbar-expand-lg fixed-top" data-aos="fade-down" aria-label="Main Navigation">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="#page-top">
-                <img src="assets/img/robo-icon.png" alt="OPS Robot Logo" class="brand-icon me-2" style="height: 35px;" loading="lazy" decoding="async" width="40" height="35" />
+                <img src="assets/img/robo-icon.png" alt="OPS Robot Logo" class="brand-icon me-2" style="height: 35px;" loading="lazy" />
                 <span class="fs-4">OPS</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -479,8 +480,7 @@
             <div class="container">
                 <div class="row align-items-center g-5">
                     <div class="col-lg-6" data-aos="fade-right">
-                        <!-- Image with explicit width and height to prevent layout shifts -->
-                        <img src="assets/img/robo-desk.png" alt="OPS Robot working on a desk, representing automation and efficiency" class="img-fluid rounded shadow-lg" loading="lazy" decoding="async" width="600" height="400" />
+                        <img src="assets/img/robo-desk.png" alt="OPS Robot working on a desk, representing automation and efficiency" class="img-fluid rounded shadow-lg" loading="lazy" />
                     </div>
                     <div class="col-lg-6" data-aos="fade-left">
                         <h2 class="section-title text-center text-lg-start">Optimized Process Systems (OPS): Elevating Egyptian Business</h2>
@@ -505,26 +505,22 @@
                 </div>
                 <div class="row g-4 justify-content-center">
                     <div class="col-md-6 col-lg-3 text-center feature-item" data-aos="zoom-in" data-aos-delay="100">
-                        <!-- Image with explicit width and height -->
-                        <img src="assets/img/feature-erp.png" alt="Icon representing ERP system integration for business management" class="mb-3 feature-icon" loading="lazy" decoding="async" width="70" height="70" />
+                        <img src="assets/img/feature-erp.png" alt="Icon representing ERP system integration for business management" class="mb-3 feature-icon" loading="lazy" />
                         <h5>Integrated ERP</h5>
                         <p>Unify and command all core business functions—from finance to CRM—with a highly customized, centralized system.</p>
                     </div>
                     <div class="col-md-6 col-lg-3 text-center feature-item" data-aos="zoom-in" data-aos-delay="200">
-                        <!-- Image with explicit width and height -->
-                        <img src="assets/img/feature-rpa.png" alt="Icon representing Robotic Process Automation for task automation" class="mb-3 feature-icon" loading="lazy" decoding="async" width="70" height="70" />
+                        <img src="assets/img/feature-rpa.png" alt="Icon representing Robotic Process Automation for task automation" class="mb-3 feature-icon" loading="lazy" />
                         <h5>Intelligent RPA</h5>
                         <p>Leverage advanced bots to automate high-volume, repetitive tasks, dramatically boosting efficiency and eliminating manual errors.</p>
                     </div>
                     <div class="col-md-6 col-lg-3 text-center feature-item" data-aos="zoom-in" data-aos-delay="300">
-                        <!-- Image with explicit width and height -->
-                        <img src="assets/img/robo-chart.png" alt="OPS Robot with charts, representing data analytics and insights" class="mb-3 feature-icon" loading="lazy" decoding="async" width="70" height="70" />
+                        <img src="assets/img/robo-chart.png" alt="OPS Robot with charts, representing data analytics and insights" class="mb-3 feature-icon" loading="lazy" />
                         <h5>AI-Powered Insights</h5>
                         <p>Convert raw data into profound intelligence through dynamic real-time dashboards and sophisticated predictive analytics, driving superior decision-making.</p>
                     </div>
                     <div class="col-md-6 col-lg-3 text-center feature-item" data-aos="zoom-in" data-aos-delay="400">
-                        <!-- Image with explicit width and height -->
-                        <img src="assets/img/feature-integration.png" alt="Icon representing seamless system integration with third-party apps" class="mb-3 feature-icon" loading="lazy" decoding="async" width="70" height="70" />
+                        <img src="assets/img/feature-integration.png" alt="Icon representing seamless system integration with third-party apps" class="mb-3 feature-icon" loading="lazy" />
                         <h5>Seamless Integrations</h5>
                         <p>Achieve frictionless connectivity with your current CRM, communication platforms, and essential third-party applications.</p>
                     </div>
@@ -613,51 +609,43 @@
                 </div>
                 <div class="row g-4 text-center justify-content-center">
                     <div class="col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-                        <!-- Image with explicit width and height -->
-                        <img src="assets/img/industry-travel.png" alt="Travel and Hospitality Industry Icon, representing booking automation" class="industry-icon mb-3 rounded-circle border p-2" style="background-color: #e0f7fa;" loading="lazy" decoding="async" width="90" height="90" />
+                        <img src="assets/img/industry-travel.png" alt="Travel and Hospitality Industry Icon, representing booking automation" class="industry-icon mb-3 rounded-circle border p-2" style="background-color: #e0f7fa;" loading="lazy" />
                         <h6>Travel & Hospitality</h6>
                         <p class="small text-muted">Automate reservations, optimize inventory, and elevate guest experiences.</p>
                     </div>
                     <div class="col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-                        <!-- Image with explicit width and height -->
-                        <img src="assets/img/industry-retail.png" alt="Retail and E-commerce Industry Icon, representing supply chain optimization" class="industry-icon mb-3 rounded-circle border p-2" style="background-color: #fff3e0;" loading="lazy" decoding="async" width="90" height="90" />
+                        <img src="assets/img/industry-retail.png" alt="Retail and E-commerce Industry Icon, representing supply chain optimization" class="industry-icon mb-3 rounded-circle border p-2" style="background-color: #fff3e0;" loading="lazy" />
                         <h6>Retail & E-commerce</h6>
                         <p class="small text-muted">Streamline supply chains, accelerate order fulfillment, and gain critical sales intelligence.</p>
                     </div>
                     <div class="col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-                        <!-- Image with explicit width and height -->
-                        <img src="assets/img/industry-manufacturing.png" alt="Manufacturing and Logistics Industry Icon, representing production efficiency" class="industry-icon mb-3 rounded-circle border p-2" style="background-color: #e8f5e9;" loading="lazy" decoding="async" width="90" height="90" />
+                        <img src="assets/img/industry-manufacturing.png" alt="Manufacturing and Logistics Industry Icon, representing production efficiency" class="industry-icon mb-3 rounded-circle border p-2" style="background-color: #e8f5e9;" loading="lazy" />
                         <h6>Manufacturing & Logistics</h6>
                         <p class="small text-muted">Boost production efficiency, achieve precise inventory control, and simplify intricate logistics.</p>
                     </div>
                      <div class="col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="400">
-                        <!-- Image with explicit width and height -->
-                        <img src="assets/img/industry-accounting.png" alt="Accounting Companies Industry Icon, representing automated financial processes" class="industry-icon mb-3 rounded-circle border p-2" style="background-color: #f3e5f5;" loading="lazy" decoding="async" width="90" height="90" />
+                        <img src="assets/img/industry-accounting.png" alt="Accounting Companies Industry Icon, representing automated financial processes" class="industry-icon mb-3 rounded-circle border p-2" style="background-color: #f3e5f5;" loading="lazy" />
                         <h6>Accounting & Finance</h6>
                         <p class="small text-muted">Automate financial reporting, reconciliation, and audit prep for greater accuracy and compliance.</p>
                     </div>
                      <div class="col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="500">
-                        <!-- Image with explicit width and height -->
-                        <img src="assets/img/industry-healthcare.png" alt="Healthcare Industry Icon, representing streamlined patient management" class="industry-icon mb-3 rounded-circle border p-2" style="background-color: #ffe0b2;" loading="lazy" decoding="async" width="90" height="90" />
+                        <img src="assets/img/industry-healthcare.png" alt="Healthcare Industry Icon, representing streamlined patient management" class="industry-icon mb-3 rounded-circle border p-2" style="background-color: #ffe0b2;" loading="lazy" />
                         <h6>Healthcare</h6>
                         <p class="small text-muted">Streamline patient administration, optimize billing cycles, and secure sensitive data.</p>
                     </div>
                     <div class="col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="600">
-                        <!-- Image with explicit width and height -->
-                        <img src="assets/img/industry-education.png" alt="Education Industry Icon, representing automated admissions" class="industry-icon mb-3 rounded-circle border p-2" style="background-color: #c8e6c9;" loading="lazy" decoding="async" width="90" height="90" />
+                        <img src="assets/img/industry-education.png" alt="Education Industry Icon, representing automated admissions" class="industry-icon mb-3 rounded-circle border p-2" style="background-color: #c8e6c9;" loading="lazy" />
                         <h6>Education</h6>
                         <p class="small text-muted">Automate admissions, efficiently manage student records, and optimize campus-wide operations.</p>
                     </div>
                     
                     <div class="col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="800">
-                        <!-- Image with explicit width and height -->
-                        <img src="assets/img/industry-professional.png" alt="Professional Services Industry Icon, representing project management" class="industry-icon mb-3 rounded-circle border p-2" style="background-color: #e1bee7;" loading="lazy" decoding="async" width="90" height="90" />
+                        <img src="assets/img/industry-professional.png" alt="Professional Services Industry Icon, representing project management" class="industry-icon mb-3 rounded-circle border p-2" style="background-color: #e1bee7;" loading="lazy" />
                         <h6>Professional Services</h6>
                         <p class="small text-muted">Master project management, optimize client invoicing, and automate comprehensive reporting.</p>
                     </div>
                     <div class="col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="900">
-                        <!-- Image with explicit width and height -->
-                        <img src="assets/img/industry-realestate.png" alt="Real Estate Industry Icon, representing automated property listings" class="industry-icon mb-3 rounded-circle border p-2" style="background-color: #fffde7;" loading="lazy" decoding="async" width="90" height="90" />
+                        <img src="assets/img/industry-realestate.png" alt="Real Estate Industry Icon, representing automated property listings" class="industry-icon mb-3 rounded-circle border p-2" style="background-color: #fffde7;" loading="lazy" />
                         <h6>Real Estate</h6>
                         <p class="small text-muted">Automate property listings, cultivate robust client relationships, and accelerate sales cycles.</p>
                     </div>
@@ -730,7 +718,7 @@
                                 </h3>
                                 <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
                                     <div class="accordion-body">
-                                        Data security is a cornerstone of OPS. We implement industry-leading encryption protocols, conduct regular security audits, and enforce robust access controls to protect your sensitive information. Our infrastructure is designed for resilience and data integrity, ensuring your data remains secure and accessible only to authorized personnel."
+                                        Data security is a cornerstone of OPS. We implement industry-leading encryption protocols, conduct regular security audits, and enforce robust access controls to protect your sensitive information. Our infrastructure is designed for resilience and data integrity, ensuring your data remains secure and accessible only to authorized personnel.
                                     </div>
                                 </div>
                             </div>
@@ -758,7 +746,7 @@
                                         <ul class="list-unstyled">
                                             <li class="mb-2"><i class="bi bi-arrow-right-short text-warning"></i> <strong>Free Consultation:</strong> Discuss your unique challenges and opportunities.</li>
                                             <li class="mb-2"><i class="bi bi-arrow-right-short text-warning"></i> <strong>Personalized Demo:</strong> See OPS in action, tailored to your industry.</li>
-                                            <li class="mb-2"><i class="bi bi-arrow-right-short text-warning"></i> <strong>Custom Solution Blueprint:</b> Get a roadmap for your digital transformation.</li>
+                                            <li class="mb-2"><i class="bi bi-arrow-right-short text-warning"></i> <strong>Custom Solution Blueprint:</strong> Get a roadmap for your digital transformation.</li>
                                             <li class="mb-2"><i class="bi bi-arrow-right-short text-warning"></i> <strong>Expert Local Support:</strong> Benefit from our dedicated Cairo-based team.</li>
                                         </ul>
                                     </div>
@@ -836,8 +824,8 @@
     </footer>
 
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" async></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" async></script>
     <script>
         AOS.init({
             duration: 900,
